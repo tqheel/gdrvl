@@ -1,0 +1,14 @@
+{
+  "name": "gdrvl",
+  "version": "1.0.0",
+  "description": "A tool for interfacing with the Google drive API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Todd E. Qualls",
+  "license": "ISC",
+  "dependencies": {
+    "google-drive": "0.0.8"
+  }
+}
