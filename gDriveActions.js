@@ -35,22 +35,20 @@ function listFiles(auth) {
 }
 
 function addFile(auth, fileMetaData, media) {
-
   console.log('drive initiated, adding file')
-  service.files.create({
+  let req = service.files.create({
     auth: auth,
     resource: fileMetaData,
     media: media,
     fields: 'id'
-    
+
   }, function (err, file) {
-    console.log('this is the callback')
     if (err) {
       throw err;
     } else {
       console.log('FileId: ', file.id);
+      console.log('Upload complete.');
     }
-
   });
 }
 
